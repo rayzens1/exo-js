@@ -1,7 +1,7 @@
 const prompt = require('prompt-sync') ();
 
-const str = prompt('Entrer une chaine de caractere');
-const amount = prompt('Entrer une chaine de caractere');
+const str = prompt('Entrer une chaine de caractere: ');
+const amount = prompt('Entrée la longueur que vous voulez affiche: ');
 
 const chars = str.split('');
 
