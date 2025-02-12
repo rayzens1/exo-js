@@ -8,8 +8,16 @@ function reverseString(str) {
     return newString;
 }
 
-if(word.slice(0, word.length/2) == reverseString(word.slice((word.length/2)+1, word.length))) {
-    console.log(word+" est un palyndrome.")
+if(word.length%2==1) {
+    if(word.slice(0, word.length/2) == reverseString(word.slice((word.length/2)+1, word.length))) { //Impair
+        console.log(word+" est un palyndrome.")
+    } else {
+        console.log(word+" n'est pas un palyndrome.")
+    }
 } else {
-    console.log(word+" n'est pas un palyndrome.")
+    if(word.slice(0, word.length/2) == reverseString(word.slice((word.length/2), word.length))) { //Pair
+        console.log(word+" est un palyndrome.")
+    } else {
+        console.log(word+" n'est pas un palyndrome.")
+    }
 }
