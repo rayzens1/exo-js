@@ -6,6 +6,6 @@ const ville = {
 }
 
 console.log(ville.name);
-console.log(ville.hotel);
-console.log(ville.gites);
-console.log(ville.randonnées);
+console.log(`Hôtels ${ville.hotel}`);
+console.log(`Gites : ${ville.gites}`);
+console.log(`Randonnées pédestres : ${ville.randonnées}`);
